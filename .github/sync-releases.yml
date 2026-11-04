@@ -18,7 +18,7 @@ jobs:
 
       - name: Comparar versiones y replicar release
         env:
-          UPSTREAM_REPO: "dyang886/Game-Cheats-Manager"
+          UPSTREAM_REPO: "LimaDiogenes/blue41_PES2021_MOD_STUDIO"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
