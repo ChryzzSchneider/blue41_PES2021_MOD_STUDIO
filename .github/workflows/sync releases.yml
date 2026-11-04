@@ -55,6 +55,15 @@ jobs:
           echo "Descargando binarios adjuntos..."
           gh release download "$UPSTREAM_TAG" --repo "$UPSTREAM_REPO" --dir . || true
 
+          # Comprimir carpetas en archivos .zip para evitar errores al subir directorios
+          for item in *; do
+            if [ -d "$item" ]; then
+              echo "Comprimiendo la carpeta '$item' en un archivo .zip..."
+              zip -r "${item}.zip" "$item"
+              rm -rf "$item"
+            fi
+          done
+
           cd ..
 
           # Detectar automáticamente la rama principal del fork (main o master)
