@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Move your Football Life 2026 mods to FL27: face packs, kits, balls, stadiums | blue41 Mod Studio</title>
+  <meta name="description" content="Bring your FL26 mods into Football Life 2027 without overwriting anything: content roots, Lua modules, commentary and face packs. Kits, balls and stadiums can go straight into FL27&#x27;s own modules. Every copy can be undone.">
+  <meta name="author" content="Diogenes Lima">
+  <meta name="google-site-verification" content="sZ-Kj17O8G05r7DB1WgwxXa4gXEpdDdxaD0iB810Zck">
+  <meta name="msvalidate.01" content="7CC8CF5386225106531AEC23307152A7">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/guides/move-mods-fl26-to-fl27/">
+  <link rel="alternate" hreflang="en" href="https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/guides/move-mods-fl26-to-fl27/">
+  <link rel="alternate" hreflang="pt-BR" href="https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/pt/guides/move-mods-fl26-to-fl27/">
+  <link rel="alternate" hreflang="es" href="https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/es/guides/move-mods-fl26-to-fl27/">
+  <link rel="alternate" hreflang="x-default" href="https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/guides/move-mods-fl26-to-fl27/">
+  <link rel="icon" href="../../favicon.ico">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="blue41 PES2021 Mod Studio">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Move your mods from FL26 to FL27">
+  <meta property="og:description" content="Bring your FL26 mods into Football Life 2027 without overwriting anything: content roots, Lua modules, commentary and face packs. Kits, balls and stadiums can go straight into FL27&#x27;s own modules. Every copy can be undone.">
+  <meta property="og:url" content="https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/guides/move-mods-fl26-to-fl27/">
+  <meta property="og:image" content="https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "headline": "Move your mods from FL26 to FL27", "description": "Bring your FL26 mods into Football Life 2027 without overwriting anything: content roots, Lua modules, commentary and face packs. Kits, balls and stadiums can go straight into FL27's own modules. Every copy can be undone.", "inLanguage": "en", "url": "https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/guides/move-mods-fl26-to-fl27/", "image": "https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/assets/og.jpg", "author": {"@type": "Person", "name": "Diogenes Lima"}, "publisher": {"@type": "Organization", "name": "blue41 studio", "url": "https://limadiogenes.github.io/blue41Studio/"}, "about": {"@type": "SoftwareApplication", "name": "blue41 PES2021 Mod Studio", "operatingSystem": "Windows 10, Windows 11", "applicationCategory": "GameApplication", "url": "https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "blue41 PES2021 Mod Studio", "item": "https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/#guides"}, {"@type": "ListItem", "position": 3, "name": "Move your mods from FL26 to FL27", "item": "https://limadiogenes.github.io/blue41_PES2021_MOD_STUDIO/guides/move-mods-fl26-to-fl27/"}]}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="../../">
+      <span class="brand-b41">blue41</span>
+      <span class="brand-name">PES2021 MOD STUDIO</span>
+    </a>
+    <nav>
+      <a href="../../#features">Features</a>
+      <a href="../../#guides">Guides</a>
+      <a href="../../#faq">FAQ</a>
+      <a href="https://limadiogenes.github.io/blue41Studio/">Other projects</a>
+      <details class="lang">
+        <summary aria-label="Language">🌐 EN</summary>
+        <div class="lang-menu"><a href="../../guides/move-mods-fl26-to-fl27/" hreflang="en" aria-current="true">English</a><a href="../../pt/guides/move-mods-fl26-to-fl27/" hreflang="pt-BR">Português</a><a href="../../es/guides/move-mods-fl26-to-fl27/" hreflang="es">Español</a></div>
+      </details>
+    </nav>
+  </header>
+
+  <main class="guide">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="../../">Home</a> › <a href="../../#guides">Guides</a></nav>
+    <article>
+      <h1>Move your mods from FL26 to FL27</h1>
+      <p class="lead">Copying mods between two Football Life versions by hand means comparing folders and editing sider.ini. The Move from another game page compares both games, shows only what the new one doesn't have, and copies what you tick.</p>
+      <section>
+        <h2>Step by step</h2>
+        <p class="small">The app speaks English, Español and Português (Settings → Language); the names below are the ones you&#x27;ll see in English.</p>
+        <ol class="steps">
+          <li>On Home, pick the game you are moving <b>to</b> (<b>FL27</b>) and close it if it's running.</li>
+          <li>Open <b>Move from another game</b> and check <b>Copy from:</b> (<b>FL26</b>). The comparison can take a few minutes on big installs.</li>
+          <li><b>Needs your decision</b>: for each FL26 module that does a job FL27 already does, choose <b>Don't move it</b> (safest), <b>Move its content</b> (its kits, balls or stadiums go into FL27's own module) or <b>Copy and use both</b> (not recommended: they can clash).</li>
+          <li>Tick what else you want from <b>Content roots (livecpk)</b>, <b>Lua modules</b> and <b>Game data files</b>. Nothing is pre-ticked: these can be tens of GB.</li>
+          <li>Press <b>Copy ticked…</b> and confirm (backup of sider.ini first), then start the game.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Good to know</h2>
+        <ul class="tips">
+          <li>Nothing of FL27 is overwritten and FL26 stays as it is. Where both games have an entry for the same team or competition, FL27's stays. Undo from the <b>Change log</b>.</li>
+          <li>Face packs: FL27 ships empty placeholder files, and the page replaces those with your FL26 pack.</li>
+          <li>Your career: <b>Become a Legend → Move a career</b> (experimental) writes your FL26 career as a new FL27 save. Keep your own copy of the original.</li>
+          <li>Not moved yet: scoreboards, referee kits, sleeve badges, menus and your boots, chants and ball choices made in the studio. The page's <b>Not moved by this page</b> card explains how to do each by hand.</li>
+          <li>Gameplay hooks and exe patches are made for one game exe: get the version made for the new game from its author.</li>
+        </ul>
+      </section>
+      <div class="cta">
+        <a class="button primary" href="https://github.com/LimaDiogenes/blue41_PES2021_MOD_STUDIO/releases/latest">Download v0.3.0</a>
+        <a class="button" href="../../">Home</a>
+      </div>
+      <p class="small">Free · Windows 10/11 · no installer · PES 2021 + Sider, SP Football Life 2026 and 2027 · English, Español, Português</p>
+    </article>
+    <section>
+      <h2>More guides</h2>
+      <div class="guide-list">
+        <a class="guide-card" href="../install-boots-gloves-pack/"><span>Install a boots or gloves pack</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../fix-missing-boots/"><span>Fix missing boots and gloves</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../manage-balls/"><span>Manage balls and competitions</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../custom-chants/"><span>Add custom crowd chants</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../become-a-legend-editor/"><span>Become a Legend: numbers, captain, set pieces</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../full-team-control-become-a-legend/"><span>Become a Legend: control the whole team</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../national-team-numbers/"><span>Fix national team shirt numbers</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../no-injuries-become-a-legend/"><span>Turn off injuries in Become a Legend</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../sider-settings/"><span>Sider 7 settings explained</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../football-life-2027/"><span>Modding Football Life 2027 (FL27)</span><b aria-hidden="true">→</b></a>
+        <a class="guide-card" href="../football-life-2026/"><span>Modding Football Life 2026 (FL26)</span><b aria-hidden="true">→</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 <a href="https://limadiogenes.github.io/blue41Studio/">blue41 studio</a> · by Diogenes Lima · Contact: <a href="mailto:blue41management@gmail.com">blue41management@gmail.com</a></p>
+    <p>Freeware, all rights reserved — see the <a href="../../LICENSE.txt">license</a>.</p>
+    <p class="small">Not affiliated with or endorsed by KONAMI. eFootball and PES are trademarks of KONAMI. The app ships no game files; it works with your own installation. Sider is a separate tool by its own author.</p>
+    <p class="langs"><a href="../../guides/move-mods-fl26-to-fl27/" hreflang="en" aria-current="true">English</a><a href="../../pt/guides/move-mods-fl26-to-fl27/" hreflang="pt-BR">Português</a><a href="../../es/guides/move-mods-fl26-to-fl27/" hreflang="es">Español</a></p>
+    <div class="globe"><script src="https://revolvermaps2.com/embed.js" data-site="pm3khapg2y24" data-size="200" data-theme="custom" data-color="00fbff" data-land="2b3f5a" data-ocean="1c1c1c" async></script></div>
+    <p class="made-in"><svg class="flag" viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" rx="2" fill="#009C3B"/><path d="M10 1.6 18.2 7 10 12.4 1.8 7z" fill="#FFDF00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/></svg><span>Made in Brazil</span></p>
+  </footer>
+</body>
+</html>
